@@ -1,0 +1,258 @@
+/*Social-header styling*/
+.social-header{
+    padding-top: 2%;
+}
+/*Social nav styling*/
+.social-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
+  }
+/*Social nav child element styling*/
+.social-nav > li {
+    color: #C5B7B7;
+    list-style: none;
+    display: inline-block;
+    width: calc(100% / 3);
+    height: 20px;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    font-size: 2vw;
+    font-kerning: none;
+    text-transform: uppercase;
+  }
+
+  /*Site nav styling*/
+  .nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
+  }
+/*Site navigation child element styling*/
+.nav > li {
+    color: #C5B7B7;
+    list-style: none;
+    width: calc(100% / 4);
+    height: 20px;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    font-size: 2vw;
+    font-kerning: none;
+    text-transform: uppercase;
+  }
+/*Link styling*/
+a   {
+    color: #7b1c1c; 
+    text-decoration: none; /*Remove underline from links (streamlined appearance).*/
+}
+/* Link hover styling*/
+a:hover {
+    color: #C5B7B7;
+    
+}
+/*Body copy link styling*/
+.body-link{
+    color: black;
+}
+
+  /*========================================== STICKY NAV  ===========================================*/
+  /*Nav Container*/
+  #nav-row{
+    padding-bottom:15px;
+    z-index: 1;
+    background:white;
+}
+
+/*Sticky styling and class creation for JS*/
+.main-row{
+    padding:16px;
+}
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.sticky + .main-row{
+    padding-top:52px;
+}
+
+
+
+/*========================================== IFRAME STYLING ===========================================*/
+/*iFrame responsive styling*/
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:1vw;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe{
+	position:absolute;
+	top:0;
+	left:10%;
+	width:80%;
+    height:80%;
+}
+/*=====================================================================================================*/
+
+/*Styling for intro headings*/
+h1 {
+    font-family: "Montserrat",sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 120;
+    font-size: 180%;
+    text-transform: uppercase;
+    text-align: center;
+    font-kerning: none;
+}
+
+h2{
+    font-family: "Montserrat",sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 120;
+    font-size: 140%;
+    text-transform: uppercase;
+    font-kerning: none;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+    text-transform: italic;
+    font-size: 100%;
+    padding-bottom: 5%;
+    padding-top:5%;
+    padding: 5% 5%;  
+}
+
+.info-headline{
+    padding: 10%, 0%;
+}
+
+.info-copy {
+    font-family: 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+    text-transform: italic;
+    font-size: 100%;
+    padding-bottom: 5%;
+    padding-top:5%;
+    padding: 5% 5%;
+}
+
+/*===========================================INDEX PHOTO GRID STYLING ====================================*/
+/*Paintings styling*/
+.photo-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.photo{
+    padding:1%;
+}
+.photo > img{
+    width: 20vw;
+    flex-basis: 20%;
+}
+
+/*====================================== PORTFOLIO IMAGE STYLING====================================*/
+
+.column{
+    display:flex;
+    flex-wrap:wrap;
+    padding:0 4px;
+    width:100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5% 5%;
+    justify-content:space-around;
+}
+
+.row > .image-container{
+    flex-basis: 20%;
+    flex-wrap:wrap;
+    flex-direction:row;
+    padding: 0 1.5%;
+}
+
+
+.image-container > img{
+    width: 100%;
+}
+
+/*====================================== EMAIL BUTTON STYLING ====================================*/
+.button{
+    width:100%;
+    text-align: center;
+}
+
+button {
+    text-align:center;
+    border-radius: 20px;
+    background-color: #C5B7B7;
+    border: none;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 30%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+/******************************************** FOOTER STYLING *************************************/
+
+
+.footer{
+    font-family: "Montserrat",sans-serif, Arial, Helvetica, sans-serif;;
+    font-weight: 120;
+    font-size: 160%;
+    text-transform: uppercase;
+    text-align: center;
+    font-kerning: none;
+}
+
+span{
+    color: #7b1c1c;
+}
+
+
